@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Web App</title>
+</head>
+<body>
+    <h1>ChatGPT Web App</h1>
+    <form action="/" method="post">
+        <label for="user_input">Your question or prompt:</label>
+        <br>
+        <textarea id="user_input" name="user_input" rows="4" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Response:</h2>
+    <p>{{ response_text }}</p>
+</body>
+</html>
