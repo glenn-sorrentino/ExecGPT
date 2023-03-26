@@ -55,12 +55,6 @@ OPENAI_API_KEY=your_api_key_here
 Replace `your_api_key_here` with your actual OpenAI API key.
 3. Save the `.env` file.
 
-4. In the `app.py` file, add the following lines at the beginning to load the environment variables from the `.env` file:
-```
-from dotenv import load_dotenv
-load_dotenv()
-```
-
 Make sure to install the python-dotenv package if you haven't already:
 
 ```
