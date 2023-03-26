@@ -45,7 +45,27 @@ pip install -r requirements.txt
 
 ## Step 4: Configure environment variables
 
-1. Set up environment variables for the API key and any other configuration settings. You can use a `.env` file or set the variables directly in your terminal/command prompt.
+1. Create a file named `.env` in the root directory of the project to store your environment variables. This file should not be committed to the repository, so add it to your `.gitignore` file if necessary.
+2. Open the `.env` file and add the following line to set up the API key for OpenAI:
+
+```
+OPENAI_API_KEY=your_api_key_here
+```
+
+Replace `your_api_key_here` with your actual OpenAI API key.
+3. Save the `.env` file.
+
+4. In the `app.py` file, add the following lines at the beginning to load the environment variables from the `.env` file:
+```
+from dotenv import load_dotenv
+load_dotenv()
+```
+
+Make sure to install the python-dotenv package if you haven't already:
+
+```
+pip install python-dotenv
+```
 
 ## Step 5: Run the application locally
 
